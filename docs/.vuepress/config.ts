@@ -2,6 +2,7 @@ import { defaultTheme } from 'vuepress';
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top';
 
 export default {
+    base: '/windward-guide/',
     head: [['link', { rel: 'icon', href: '/windward.png' }]],
     plugins: [
         backToTopPlugin(),
