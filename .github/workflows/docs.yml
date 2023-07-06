@@ -34,7 +34,7 @@ jobs:
           cache: pnpm
 
       # 运行构建脚本
-      - name: Build Windward-guide site
+      - name: Build windward site
         run: pnpm docs:build
 
       # 查看 workflow 的文档来获取更多信息
