@@ -4,7 +4,7 @@ title: Getting Started
 description: Getting Started
 ---
 ::: warning
-Windward is currently in developing stage
+Windward is currently in developing stage,But It's basically available
 :::
 ## Prerequisites
 - Jdk1.8+

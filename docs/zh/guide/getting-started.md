@@ -5,7 +5,7 @@ description: Windward快速上手
 ---
 ## 快速上手
 ::: warning 注意
-Windward仍处于开发阶段
+Windward仍处于开发阶段，但是已基本可用
 :::
 ## 依赖环境
 - Jdk1.8+
