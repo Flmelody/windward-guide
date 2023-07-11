@@ -16,7 +16,7 @@ only Jdk1.8+ tested currently
 <dependency>
   <groupId>org.flmelody</groupId>
   <artifactId>windward</artifactId>
-  <version>1.0-RELEASE</version>
+  <version>1.1-RELEASE</version>
 </dependency>
 ```
 ## define functions

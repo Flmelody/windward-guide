@@ -17,7 +17,7 @@ Windward仍处于开发阶段，但是已基本可用
 <dependency>
   <groupId>org.flmelody</groupId>
   <artifactId>windward</artifactId>
-  <version>1.0-RELEASE</version>
+  <version>1.1-RELEASE</version>
 </dependency>
 ```
 ## 函数定义
