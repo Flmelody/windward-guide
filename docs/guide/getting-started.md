@@ -24,15 +24,15 @@ only Jdk1.8+ tested currently
 public class Function {
     // function with WindwardContext parameter
     public static void function1(WindwardContext windwardContext) {
-    windwardContext.string("hello world! function1!");  // strings
+    windwardContext.writeString("hello world! function1!");  // strings
     }
 
     public void function2(WindwardContext windwardContext) {
-    windwardContext.string("hello world! function2!");
+    windwardContext.writeString("hello world! function2!");
     }
 
     public void function3(WindwardContext windwardContext) {
-    windwardContext.json(new User(1, esotericman)); // json
+    windwardContext.writeJson(new User(1, esotericman)); // json
     }
 }
 

@@ -25,15 +25,15 @@ Windward仍处于开发阶段，但是已基本可用
 public class Function {
     // 函数入参必须WindwardContext
     public static void function1(WindwardContext windwardContext) {
-    windwardContext.string("hello world! function1!");  // 直接返回字符串
+    windwardContext.writeString("hello world! function1!");  // 直接返回字符串
     }
 
     public void function2(WindwardContext windwardContext) {
-    windwardContext.string("hello world! function2!");
+    windwardContext.writeString("hello world! function2!");
     }
 
     public void function3(WindwardContext windwardContext) {
-    windwardContext.json(new User(1, esotericman)); // 返回json
+    windwardContext.writeJson(new User(1, esotericman)); // 返回json
     }
 }
 
