@@ -3,35 +3,42 @@ lang: en-US
 title: Getting Started
 description: Getting Started
 ---
+
 ::: warning
 Windward is currently in developing stage,But It's basically available
 :::
+
 ## Prerequisites
+
 - Jdk1.8+
-::: tip 
-only Jdk1.8+ tested currently
-:::
+  ::: tip
+  only Jdk1.8+ tested currently
+  :::
+
 ## maven dependency
-``` xml
+
+```xml
 <dependency>
   <groupId>org.flmelody</groupId>
   <artifactId>windward</artifactId>
-  <version>1.1-RELEASE</version>
+  <version>1.3-RELEASE</version>
 </dependency>
 ```
+
 ## define functions
-``` java
+
+```java
 public class Function {
     // function with WindwardContext parameter
-    public static void function1(WindwardContext windwardContext) {
+    public static void function1(SimpleWindwardContext windwardContext) {
     windwardContext.writeString("hello world! function1!");  // strings
     }
 
-    public void function2(WindwardContext windwardContext) {
+    public void function2(SimpleWindwardContext windwardContext) {
     windwardContext.writeString("hello world! function2!");
     }
 
-    public void function3(WindwardContext windwardContext) {
+    public void function3(SimpleWindwardContext windwardContext) {
     windwardContext.writeJson(new User(1, esotericman)); // json
     }
 }
@@ -54,12 +61,14 @@ public class User {
     }
 }
 ```
+
 ## register function and start
-``` java
+
+```java
 public static void main(String[] args) throws Exception {
     Windward windward = Windward.setup(); // windward engine
     // register static function
-    windward.get("/function1", Function::function1); 
+    windward.get("/function1", Function::function1);
     windward.put("/function1", Function::function1);
     windward.post("/function1", Function::function1);
     windward.delete("/function1", Function::function1);
@@ -75,7 +84,9 @@ public static void main(String[] args) throws Exception {
     windward.run();
 }
 ```
+
 ## verify interface
-``` shell
+
+```shell
 curl http://127.0.0.1:8080/function1
 ```
