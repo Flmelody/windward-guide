@@ -8,7 +8,7 @@ description: Getting Started
 Windward is currently in developing stage,But It's basically available
 :::
 
-## Prerequisites
+## prerequisites
 
 - Jdk1.8+
   ::: tip
