@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: exception handler
+title: Exception Handler
 description: global exception handler
 ---
 
