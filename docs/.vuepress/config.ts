@@ -38,7 +38,8 @@ export default {
                             children:
                                 [
                                     '/guide/introduction.html',
-                                    '/guide/getting-started.html'
+                                    '/guide/getting-started.html',
+                                    '/guide/global-error-handler.html'
                                 ],
                         },
                     ],
@@ -61,7 +62,8 @@ export default {
                             children:
                                 [
                                     '/zh/guide/introduction.html',
-                                    '/zh/guide/getting-started.html'
+                                    '/zh/guide/getting-started.html',
+                                    '/zh/guide/global-error-handler.html'
                                 ],
                         },
                     ],

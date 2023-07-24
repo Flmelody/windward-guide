@@ -4,8 +4,6 @@ title: 快速上手
 description: Windward快速上手
 ---
 
-## 快速上手
-
 ::: warning 注意
 Windward 仍处于开发阶段，但是已基本可用
 :::
