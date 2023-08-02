@@ -4,7 +4,7 @@ title: Exception Handler
 description: global exception handler
 ---
 
-## implemnets base interface
+## implements base interface
 
 ```java
 public class MyExceptionHandler implements ExceptionHandler{
