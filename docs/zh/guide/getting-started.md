@@ -11,9 +11,6 @@ Windward 仍处于开发阶段，但是已基本可用
 ## 依赖环境
 
 - Jdk1.8+
-  ::: tip 提示
-  目前只有 Jdk1.8 经过测试
-  :::
 
 ## 添加 Maven 依赖
 
@@ -21,7 +18,17 @@ Windward 仍处于开发阶段，但是已基本可用
 <dependency>
   <groupId>org.flmelody</groupId>
   <artifactId>windward</artifactId>
-  <version>1.3-RELEASE</version>
+  <version>1.4.2-RELEASE</version>
+</dependency>
+```
+
+使用 jackson 作为序列化反序列化库
+
+```xml
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>${jackson-databind.version}</version>
 </dependency>
 ```
 

@@ -39,6 +39,9 @@ export default {
                                 [
                                     '/guide/introduction.html',
                                     '/guide/getting-started.html',
+                                    '/guide/json.html',
+                                    '/guide/static-router.html',
+                                    '/guide/dynamic-router.html',
                                     '/guide/global-error-handler.html'
                                 ],
                         },
@@ -63,6 +66,9 @@ export default {
                                 [
                                     '/zh/guide/introduction.html',
                                     '/zh/guide/getting-started.html',
+                                    '/zh/guide/json.html',
+                                    '/zh/guide/static-router.html',
+                                    '/zh/guide/dynamic-router.html',
                                     '/zh/guide/global-error-handler.html'
                                 ],
                         },

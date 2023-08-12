@@ -11,9 +11,6 @@ Windward is currently in developing stage,But It's basically available
 ## prerequisites
 
 - Jdk1.8+
-  ::: tip
-  only Jdk1.8+ tested currently
-  :::
 
 ## maven dependency
 
@@ -21,7 +18,17 @@ Windward is currently in developing stage,But It's basically available
 <dependency>
   <groupId>org.flmelody</groupId>
   <artifactId>windward</artifactId>
-  <version>1.3-RELEASE</version>
+  <version>1.4.2-RELEASE</version>
+</dependency>
+```
+
+use jackson
+
+```xml
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>${jackson-databind.version}</version>
 </dependency>
 ```
 
