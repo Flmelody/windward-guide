@@ -1,5 +1,5 @@
 ---
 lang: zh-CN
-title: 指南
-description: 指南
+title: 快速上手
+description: 快速上手
 ---
