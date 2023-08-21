@@ -26,7 +26,7 @@ implementation 'org.flmelody:windward:1.4.3-RELEASE'
 
 :::
 
-使用 jackson 序列化反及序列化
+使用 jackson 序列化及反序列化
 
 ::: tabs
 
