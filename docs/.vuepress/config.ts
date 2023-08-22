@@ -26,7 +26,7 @@ export default {
             comment: {
                 provider: 'Giscus',
                 repo: 'Flmelody/comment',
-                repoId: 'R_kgDOIOP_VA',
+                repoId: 'R_kgDOKJoYSA',
                 category: 'Q&A',
                 categoryId: 'DIC_kwDOKJoYSM4CYv8X'
                 
