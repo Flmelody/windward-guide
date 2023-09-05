@@ -42,6 +42,7 @@ export default {
                             children:
                                 [
                                     '/guide/introduction.html',
+                                    '/guide/why-windward.html',
                                     '/guide/dependency.html',
                                     '/guide/functions.html',
                                     '/guide/start-server.html',
@@ -93,6 +94,7 @@ export default {
                             children:
                                 [
                                     '/zh/guide/introduction.html',
+                                    '/zh/guide/why-windward.html',
                                     '/zh/guide/dependency.html',
                                     '/zh/guide/functions.html',
                                     '/zh/guide/start-server.html',
