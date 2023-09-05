@@ -6,7 +6,7 @@ description: 为什么使用Windward
 
 ## 比 SpringBoot 更快 🚀
 
-Tested in a 16 core processors machine with 1000 users.
+在 16 核机器上模拟 1000 名用户(从 1000+的对象集合中随机获取一个序列化后并返回)
 
 SpringBoot3 测试数据
 

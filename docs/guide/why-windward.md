@@ -6,7 +6,7 @@ description: Why Windward
 
 ## Faster than SpringBoot🚀
 
-Tested in a 16 core processors machine with 1000 users.
+Tested in a 16 core processors machine with 1000 users(select a random object element from collection which contains 1000+ elements, and return serialized element).
 
 SpringBoot3
 
