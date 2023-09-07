@@ -81,6 +81,23 @@ export default {
                                     '/exception/global-error-handler.html'
                                 ],
                         },
+                        {
+                            text: 'Template Engine',
+                            collapsible: true,
+                            children:
+                                [
+                                    '/template/groovy.html',
+                                    '/template/thymeleaf.html'
+                                ],
+                        },
+                        {
+                            text: 'WebSocket',
+                            collapsible: true,
+                            children:
+                                [
+                                    '/websocket/websocket.html',
+                                ],
+                        },
                     ],
 
                 }
@@ -131,6 +148,23 @@ export default {
                             children:
                                 [
                                     '/zh/exception/global-error-handler.html'
+                                ],
+                        },
+                        {
+                            text: '模板引擎',
+                            collapsible: true,
+                            children:
+                                [
+                                    '/zh/template/groovy.html',
+                                    '/zh/template/thymeleaf.html'
+                                ],
+                        },
+                        {
+                            text: 'WebSocket',
+                            collapsible: true,
+                            children:
+                                [
+                                    '/zh/websocket/websocket.html',
                                 ],
                         },
                     ],
