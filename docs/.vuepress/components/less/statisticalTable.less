@@ -1,11 +1,12 @@
-.statstical-container{
+.statistical-container{
     width:100%;
     height:100%;
-    .statstical-header{
+    .statistical-header{
         background:#3eaf7c;
         width:100%;
         padding-bottom:10px;
-        .statstical-title{
+        border-radius: 2rem;
+        .statistical-title{
             color:#fff;
             font-size:18px;
             text-align:center;
@@ -15,31 +16,31 @@
                 color:#fff;
             }
         }
-        .statstical-column{
+        .statistical-column{
             display:flex;
             margin-top:10px;
-            .statstical-tag{
+            .statistical-tag{
                 text-align:center;
                 color:#fff;
                 font-size:14px;
             }
         }
     }
-    .statsical-body{
-        .statiscal-record{
+    .statistical-body{
+        .statistical-record{
             display:flex;
             margin-top:10px;
-            .statiscal-value{
+            .statistical-value{
                 text-align:center;
                 padding:10px;
                 font-size:14px;
             }
            
         }
-        .statiscal-record:nth-child(odd){
+        .statistical-record:nth-child(odd){
             background-color: #fff;
         }
-        .statiscal-record:nth-child(even){
+        .statistical-record:nth-child(even){
             background-color: #eee;
         }
     }
@@ -47,13 +48,13 @@
 }
 
 html[data-theme=dark]{
-    .statstical-container{
-        .statsical-body{
-            .statiscal-record:nth-child(odd){
+    .statistical-container{
+        .statistical-body{
+            .statistical-record:nth-child(odd){
                 background-color: #161b22;
                color:#fff;
             }
-            .statiscal-record:nth-child(even){
+            .statistical-record:nth-child(even){
                 background-color: #0d1118;
                 color:#fff;
             }

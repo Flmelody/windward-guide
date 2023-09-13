@@ -21,24 +21,23 @@ features:
 footer: Apache 2.0 Licensed | Copyright © flmelody.org
 ---
 
-## 请求统计
-
-| Method | Name       | # Requests | # Fails | Average (ms) | Min (ms) | Max (ms) | Average size (bytes) | RPS    | Failures/s |
-| :----- | :--------- | :--------- | :------ | :----------- | :------- | :------- | :------------------- | :----- | :--------- |
-| GET    | /test/a    | 1774178    | 0       | 111          | 0        | 574      | 12                   | 8344.5 | 0.0        |
-|        | Aggregated | 1774178    | 0       | 111          | 0        | 574      | 12                   | 8344.5 | 0.0        |
-
-## 响应统计
-
-| Method | Name       | 50%ile (ms) | 60%ile (ms) | 70%ile (ms) | 80%ile (ms) | 90%ile (ms) | 95%ile (ms) | 99%ile (ms) | 100%ile (ms) |
-| :----- | :--------- | :---------- | :---------- | :---------- | :---------- | :---------- | :---------- | :---------- | :----------- |
-| GET    | /test/a    | 110         | 110         | 120         | 130         | 160         | 200         | 270         | 570          |
-|        | Aggregated | 110         | 110         | 120         | 130         | 160         | 200         | 270         | 570          |
-
-<div style="text-align: center;">
-
-![Windward](/images/total_requests_per_second.png)
-![Windward](</images/response_times_(ms).png>)
-![Windward](/images/number_of_users.png)
-
-</div>
+<StatisticalTable title="300个并发连接发送5百万请求到Hello World服务(测试在32G的Ubuntu 22.04上进行，处理器为Intel i7-10070)"
+ :headers="[
+  '基准指标',
+  'Windward(Java)',
+  'Spring WebMvc(Java)',
+  'Spring WebFlux(Java)',
+  'Javalin(Kotlin)',
+  'Playframework(Scala)',
+  'Vertx(Java)',
+  'FastAPI(Python)',
+  'Gin(Go)']" 
+ :rows="[
+  ['每秒请求数','320781.79','71233.25','52861.76','289702.08','139008.08','148174.28','14998.39','182415.85'],
+  ['总计花费时间','15s','1m10s','1m34s','17s','36s','33s','5m33s','27s'],
+  ['平均延迟','0.93ms','4.22ms','5.68ms','1.03ms','2.16ms','2.02ms','20.02ms','1.64ms'],
+  ['最大延迟','55.10ms','1.24s','123.20ms','1.04s','1.36s','80.02ms','77.96ms','45.58ms'],
+  ['50%延迟时间','285.00us','4.25ms','4.95ms','0.87ms','1.95ms','1.84ms','19.55ms','1.00ms'],
+  ['95%延迟时间','3.65ms','7.90ms','7.91ms','2.25ms','3.77ms','3.47ms','21.86ms','5.64ms']
+  ]"
+/>
