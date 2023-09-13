@@ -34,8 +34,8 @@ jobs:
             ${{ runner.os }}-yarn-6-
 
       - name: Install nodejs dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn --frozen-lockfile
+        #if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn install
         
       # 运行构建脚本
       - name: Build windward site
