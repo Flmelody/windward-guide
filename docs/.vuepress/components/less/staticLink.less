@@ -1,0 +1,63 @@
+.statstical-container{
+    width:100%;
+    height:100%;
+    .statstical-header{
+        background:#3eaf7c;
+        width:100%;
+        padding-bottom:10px;
+        .statstical-title{
+            color:#fff;
+            font-size:18px;
+            text-align:center;
+            padding:10px 0;
+            span{
+                font-size:20px;
+                color:#fff;
+            }
+        }
+        .statstical-column{
+            display:flex;
+            margin-top:10px;
+            .statstical-tag{
+                text-align:center;
+                color:#fff;
+                font-size:14px;
+            }
+        }
+    }
+    .statsical-body{
+        .statiscal-record{
+            display:flex;
+            margin-top:10px;
+            .statiscal-value{
+                text-align:center;
+                padding:10px;
+                font-size:14px;
+            }
+           
+        }
+        .statiscal-record:nth-child(odd){
+            background-color: #fff;
+        }
+        .statiscal-record:nth-child(even){
+            background-color: #eee;
+        }
+    }
+    
+}
+
+html[data-theme=dark]{
+    .statstical-container{
+        .statsical-body{
+            .statiscal-record:nth-child(odd){
+                background-color: #161b22;
+               color:#fff;
+            }
+            .statiscal-record:nth-child(even){
+                background-color: #0d1118;
+                color:#fff;
+            }
+        }
+        
+    }
+}

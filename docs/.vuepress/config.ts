@@ -1,6 +1,11 @@
 import { hopeTheme } from "vuepress-theme-hope";
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import path from "path"
+import { viteBundler } from '@vuepress/bundler-vite'
+import jsx from "@vitejs/plugin-vue-jsx"
 
-export default {
+import { defineUserConfig } from '@vuepress/cli'
+export default defineUserConfig({
     head: [['link', { rel: 'icon', href: '/windward.png' }]],
     locales: {
         '/': {
@@ -14,14 +19,26 @@ export default {
             description: 'Vue 驱动的静态网站生成器',
         },
     },
+    bundler: viteBundler({
+        viteOptions:{
+            plugins:[jsx()]
+        }
+    }),
+    plugins: [
+        registerComponentsPlugin({
+            // 配置项
+            componentsDir: path.resolve(__dirname, './components'),
+            componentsPatterns:["*.jsx",".vue"]
+        })
+    ],
     theme: hopeTheme({
         logo: '/windward.png',
         repo: 'Flmelody/windward-guide',
         darkmode: 'switch',
         plugins: {
             mdEnhance: {
-              // 添加选项卡支持
-              tabs: true,
+                // 添加选项卡支持
+                tabs: true,
             },
             comment: {
                 provider: 'Giscus',
@@ -29,9 +46,10 @@ export default {
                 repoId: 'R_kgDOKJoYSA',
                 category: 'Q&A',
                 categoryId: 'DIC_kwDOKJoYSM4CYv8X'
-                
-              },
-          },
+
+            },
+
+        },
         locales: {
             '/': {
                 sidebar: {
@@ -70,7 +88,7 @@ export default {
                             collapsible: true,
                             children:
                                 [
-                                    
+
                                 ],
                         },
                         {
@@ -139,7 +157,7 @@ export default {
                             collapsible: true,
                             children:
                                 [
-                                    
+
                                 ],
                         },
                         {
@@ -173,4 +191,4 @@ export default {
         },
         editLink: false
     }),
-}
+})
