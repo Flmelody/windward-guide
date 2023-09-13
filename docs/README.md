@@ -23,7 +23,7 @@ features:
 footer: Apache 2.0 Licensed | Copyright © flmelody.org
 ---
 
-<StatisticalTable title="300 concurrent connections for 5 million request of hello world application(all tests were conducted on Ubuntu 22.04 equipped with 32GB of RAM and Intel i7-10070 processor)"
+<StatisticalTable title="300 concurrent connections for 5 million requests of hello world application(all tests were conducted on Ubuntu 22.04 equipped with 32GB of RAM and Intel i7-10070 processor)"
  :headers="[
   'Benchmark',
   'Windward(Java)',

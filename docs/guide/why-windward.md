@@ -6,7 +6,7 @@ description: Why Windward
 
 ## Faster than Others🚀
 
-<StatisticalTable title="300 concurrent connections for 5 million request of hello world application"
+<StatisticalTable title="300 concurrent connections for 5 million requests of hello world application"
  :headers="[
   'Benchmark',
   'Windward(Java)',
