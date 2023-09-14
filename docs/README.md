@@ -23,7 +23,91 @@ features:
 footer: Apache 2.0 Licensed | Copyright © flmelody.org
 ---
 
-<StatisticalTable title="300 concurrent connections for 5 million requests of hello world application(all tests were conducted on Ubuntu 22.04 equipped with 32GB of RAM and Intel i7-10070 processor)"
+::: chart RPS Statistics
+
+```json
+{
+  "type": "bar",
+  "data": {
+    "labels": [
+      "Windward",
+      "Spring WebMvc",
+      "Spring WebFlux",
+      "Javalin",
+      "Playframework",
+      "Vertx",
+      "FastAPI",
+      "Gin"
+    ],
+    "datasets": [
+      {
+        "label": "RPS",
+        "data": [
+          320781.79, 71233.25, 52861.76, 289702.08, 139008.08, 148174.28,
+          14998.39, 182415.85
+        ],
+        "backgroundColor": [
+          "rgba(62, 175, 124, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(255, 206, 86, 0.2)",
+          "rgba(75, 192, 192, 0.2)",
+          "rgba(153, 102, 255, 0.2)",
+          "rgba(255, 159, 64, 0.2)",
+          "rgba(235, 61, 52, 0.2)",
+          "rgba(52, 205, 235, 0.2)"
+        ],
+        "borderColor": [
+          "rgba(62, 175, 124, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+          "rgba(75, 192, 192, 1)",
+          "rgba(153, 102, 255, 1)",
+          "rgba(255, 159, 64, 1)",
+          "rgba(235, 61, 52, 1)",
+          "rgba(52, 205, 235, 1)"
+        ],
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true
+      }
+    }
+  }
+}
+```
+
+:::
+
+---
+
+<div class="vp-features">
+  <div class="vp-feature-item">
+    <h3 class="vp-feature-title">
+      <span>300 concurrent connections</span>
+    </h3>
+  </div>
+  <div class="vp-feature-item">
+    <h3 class="vp-feature-title">
+      <span>5 million requests of hello world application</span>
+    </h3>
+  </div>
+  <div class="vp-feature-item">
+    <h3 class="vp-feature-title">
+      <span>Ubuntu 22.04</span>
+    </h3>
+  </div>
+  <div class="vp-feature-item">
+    <h3 class="vp-feature-title">
+      <span>32GB of RAM and Intel i7-10070 processor</span>
+    </h3>
+  </div>
+</div>
+
+<StatisticalTable title=""
  :headers="[
   'Benchmark',
   'Windward(Java)',

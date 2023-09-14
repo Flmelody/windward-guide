@@ -3,7 +3,7 @@ import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import path from "path"
 import { viteBundler } from '@vuepress/bundler-vite'
 import jsx from "@vitejs/plugin-vue-jsx"
-
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { defineUserConfig } from '@vuepress/cli'
 export default defineUserConfig({
     head: [['link', { rel: 'icon', href: '/windward.png' }]],
@@ -39,6 +39,8 @@ export default defineUserConfig({
             mdEnhance: {
                 // 添加选项卡支持
                 tabs: true,
+                 // 启用图表
+                chart: true,
             },
             comment: {
                 provider: 'Giscus',
@@ -47,8 +49,7 @@ export default defineUserConfig({
                 category: 'Q&A',
                 categoryId: 'DIC_kwDOKJoYSM4CYv8X'
 
-            },
-
+            }
         },
         locales: {
             '/': {
