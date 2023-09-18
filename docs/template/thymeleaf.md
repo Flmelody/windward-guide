@@ -37,7 +37,7 @@ template resolver for custom file extension.
 ```java
 Map<String,Object> model = new HashMap<>()
 // ... models data
-// return  /template/index.html
+// return  /templates/index.html
 windwardContext.html("index.html", model);
 ```
 

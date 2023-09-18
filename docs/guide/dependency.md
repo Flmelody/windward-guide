@@ -6,6 +6,10 @@ description: Dependency
 
 ## dependency
 
+::: info
+Java version 1.8+
+:::
+
 ::: tabs
 
 @tab:active maven

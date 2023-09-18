@@ -28,7 +28,7 @@ implementation 'org.apache.groovy:groovy-templates:4.0.14'
 
 ## template file extension and location
 
-Template file should be placed in `template` folder of resource root, also you can custom your location.
+Template file should be placed in `templates` folder of resource root, also you can custom your location.
 The default template resolver only parse files that end with `tpl` extension, you can custom your owner
 template resolver for custom file extension.
 
@@ -37,6 +37,6 @@ template resolver for custom file extension.
 ```java
 Map<String,Object> model = new HashMap<>()
 // ... models data
-// return  /template/index.tpl
+// return  /templates/index.tpl
 windwardContext.html("index.tpl", model);
 ```

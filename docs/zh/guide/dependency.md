@@ -4,6 +4,10 @@ title: 必要依赖
 description: 必要依赖
 ---
 
+::: info 提示
+Java 版本最低要求 1.8
+:::
+
 ## 添加依赖
 
 ::: tabs
@@ -14,7 +18,7 @@ description: 必要依赖
 <dependency>
   <groupId>org.flmelody</groupId>
   <artifactId>windward</artifactId>
-  <version>1.4.3-RELEASE</version>
+  <version>1.4.4-RELEASE</version>
 </dependency>
 ```
 

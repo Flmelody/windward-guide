@@ -35,7 +35,7 @@ implementation 'org.thymeleaf:thymeleaf:3.1.2.RELEASE'
 ```java
 Map<String,Object> model = new HashMap<>()
 // ... models data
-// return  /template/index.html
+// return  /templates/index.html
 windwardContext.html("index.html", model);
 ```
 
