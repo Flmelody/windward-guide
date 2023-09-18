@@ -90,7 +90,7 @@ export default defineUserConfig({
                             collapsible: true,
                             children:
                                 [
-
+                                    '/filter/filter.html'
                                 ],
                         },
                         {
@@ -160,7 +160,7 @@ export default defineUserConfig({
                             collapsible: true,
                             children:
                                 [
-
+                                    '/zh/filter/filter.html'
                                 ],
                         },
                         {
