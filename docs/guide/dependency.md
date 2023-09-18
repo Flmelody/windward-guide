@@ -18,7 +18,7 @@ Java version 1.8+
 <dependency>
   <groupId>org.flmelody</groupId>
   <artifactId>windward</artifactId>
-  <version>1.4.3-RELEASE</version>
+  <version>1.4.4-RELEASE</version>
 </dependency>
 ```
 
