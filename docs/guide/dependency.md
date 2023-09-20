@@ -25,7 +25,7 @@ Java version 1.8+
 @tab gradle
 
 ```groovy
-implementation 'org.flmelody:windward:1.4.3-RELEASE'
+implementation 'org.flmelody:windward:1.4.4-RELEASE'
 ```
 
 :::
