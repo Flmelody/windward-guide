@@ -22,7 +22,13 @@ Java version 1.8+
 </dependency>
 ```
 
-@tab gradle
+@tab gradle(kotlin)
+
+```kotlin
+implementation("org.flmelody:windward:1.4.4-RELEASE")
+```
+
+@tab gradle(groovy)
 
 ```groovy
 implementation 'org.flmelody:windward:1.4.4-RELEASE'
@@ -44,7 +50,13 @@ use jackson
 </dependency>
 ```
 
-@tab gradle
+@tab gradle(kotlin)
+
+```kotlin
+implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
+```
+
+@tab gradle(groovy)
 
 ```groovy
 implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'

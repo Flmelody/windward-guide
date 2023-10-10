@@ -18,7 +18,13 @@ description: Groovy Markup Template
 </dependency>
 ```
 
-@tab gradle
+@tab gradle(kotlin)
+
+```kotlin
+implementation("org.apache.groovy:groovy-templates:4.0.14")
+```
+
+@tab gradle(groovy)
 
 ```groovy
 implementation 'org.apache.groovy:groovy-templates:4.0.14'

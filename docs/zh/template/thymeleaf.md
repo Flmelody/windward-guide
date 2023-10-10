@@ -18,7 +18,13 @@ description: Thymeleaf 模板
 </dependency>
 ```
 
-@tab gradle
+@tab gradle(kotlin)
+
+```kotlin
+implementation("org.thymeleaf:thymeleaf:3.1.2.RELEASE")
+```
+
+@tab gradle(groovy)
 
 ```groovy
 implementation 'org.thymeleaf:thymeleaf:3.1.2.RELEASE'
@@ -41,10 +47,28 @@ windwardContext.html("index.html", model);
 
 ## 使用布局方言
 
+::: tabs
+
+@tab:active maven
+
 ```xml
- <dependency>
+<dependency>
     <groupId>nz.net.ultraq.thymeleaf</groupId>
     <artifactId>thymeleaf-layout-dialect</artifactId>
     <version>3.2.1</version>
 </dependency>
 ```
+
+@tab gradle(kotlin)
+
+```kotlin
+implementation("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.2.1")
+```
+
+@tab gradle(groovy)
+
+```groovy
+implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.2.1'
+```
+
+:::

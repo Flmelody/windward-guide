@@ -6,23 +6,59 @@ description: 使用json
 
 ## 使用 jackson
 
+::: tabs
+
+@tab:active maven
+
 ```xml
 <dependency>
     <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-databind</artifactId>
-    <version>${jackson-databind.version}</version>
+    <version>2.15.2</version>
 </dependency>
 ```
 
+@tab gradle(kotlin)
+
+```kotlin
+implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
+```
+
+@tab gradle(groovy)
+
+```groovy
+implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+```
+
+:::
+
 ## 使用 gson
+
+::: tabs
+
+@tab:active maven
 
 ```xml
 <dependency>
     <groupId>com.google.code.gson</groupId>
     <artifactId>gson</artifactId>
-    <version>${gson.version}</version>
+    <version>2.10.1</version>
 </dependency>
 ```
+
+@tab gradle(kotlin)
+
+```kotlin
+implementation("com.google.code.gson:gson:2.10.1")
+```
+
+@tab gradle(groovy)
+
+```groovy
+implementation 'com.google.code.gson:gson:2.10.1'
+```
+
+:::
 
 ## 覆盖默认的 json 插件行为
 

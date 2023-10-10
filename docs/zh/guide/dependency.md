@@ -22,7 +22,13 @@ Java 版本最低要求 1.8
 </dependency>
 ```
 
-@tab gradle
+@tab gradle(kotlin)
+
+```kotlin
+implementation("org.flmelody:windward:1.4.4-RELEASE")
+```
+
+@tab gradle(groovy)
 
 ```groovy
 implementation 'org.flmelody:windward:1.4.4-RELEASE'
@@ -44,7 +50,13 @@ implementation 'org.flmelody:windward:1.4.4-RELEASE'
 </dependency>
 ```
 
-@tab gradle
+@tab gradle(kotlin)
+
+```kotlin
+implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
+```
+
+@tab gradle(groovy)
 
 ```groovy
 implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
