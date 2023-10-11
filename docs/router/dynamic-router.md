@@ -17,5 +17,5 @@ Routers are FIFO;If you register a dynamic router before static one,The static r
 ## access path variable
 
 ```java
-windwardContext.getPathVariables()
+windwardContext.getPathVariables().get("name")
 ```

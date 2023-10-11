@@ -17,5 +17,5 @@ description: 动态路由
 ## 访问路由参数
 
 ```java
-windwardContext.getPathVariables()
+windwardContext.getPathVariables().get("name")
 ```
