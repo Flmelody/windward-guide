@@ -107,7 +107,8 @@ export default defineUserConfig({
                             children:
                                 [
                                     '/template/groovy.html',
-                                    '/template/thymeleaf.html'
+                                    '/template/thymeleaf.html',
+                                    '/template/freemarker.html'
                                 ],
                         },
                         {
@@ -118,6 +119,25 @@ export default defineUserConfig({
                                     '/websocket/websocket.html',
                                 ],
                         },
+                        {
+                            text: 'Dependency Injection',
+                            collapsible: true,
+                            children:
+                                [
+                                    '/dependency-injection/burner.html',
+                                    '/dependency-injection/avaje.html',
+                                    '/dependency-injection/dagger.html',
+                                    '/dependency-injection/spring.html'
+                                ],
+                        },
+                        {
+                            text: 'Showcase',
+                            collapsible: true,
+                            children:
+                                [
+                                    '/showcase/short-url.html'
+                                ],
+                        }
                     ],
 
                 }
@@ -177,17 +197,37 @@ export default defineUserConfig({
                             children:
                                 [
                                     '/zh/template/groovy.html',
-                                    '/zh/template/thymeleaf.html'
+                                    '/zh/template/thymeleaf.html',
+                                    '/zh/template/freemarker.html'
                                 ],
                         },
                         {
-                            text: 'WebSocket',
+                            text: '长连接',
                             collapsible: true,
                             children:
                                 [
                                     '/zh/websocket/websocket.html',
                                 ],
                         },
+                        {
+                            text: '依赖注入',
+                            collapsible: true,
+                            children:
+                                [
+                                    '/zh/dependency-injection/burner.html',
+                                    '/zh/dependency-injection/avaje.html',
+                                    '/zh/dependency-injection/dagger.html',
+                                    '/zh/dependency-injection/spring.html'
+                                ],
+                        },
+                        {
+                            text: '使用案例',
+                            collapsible: true,
+                            children:
+                                [
+                                    '/zh/showcase/short-url.html'
+                                ],
+                        }
                     ],
                 }
             },
