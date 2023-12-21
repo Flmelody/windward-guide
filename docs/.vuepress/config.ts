@@ -35,6 +35,7 @@ export default defineUserConfig({
         logo: '/windward.png',
         repo: 'Flmelody/windward',
         docsRepo: 'Flmelody/windward-guide',
+        docsDir: 'docs',
         darkmode: 'switch',
         plugins: {
             mdEnhance: {
