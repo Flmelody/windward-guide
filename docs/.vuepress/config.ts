@@ -233,6 +233,6 @@ export default defineUserConfig({
                 }
             },
         },
-        editLink: false
+        editLink: true
     }),
 })
