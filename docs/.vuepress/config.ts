@@ -33,7 +33,8 @@ export default defineUserConfig({
     ],
     theme: hopeTheme({
         logo: '/windward.png',
-        repo: 'Flmelody/windward-guide',
+        repo: 'Flmelody/windward',
+        docsRepo: 'Flmelody/windward-guide',
         darkmode: 'switch',
         plugins: {
             mdEnhance: {
