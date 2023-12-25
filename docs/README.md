@@ -3,7 +3,7 @@ title: Windward
 home: true
 heroImage: windward.png
 heroText: Windward
-tagline: Light Web Function Framework
+tagline: Light Web Framework For Java
 actions:
   - text: Get Started
     link: /guide/dependency.html

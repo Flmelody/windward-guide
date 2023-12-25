@@ -3,7 +3,7 @@ title: Windward
 home: true
 heroImage: windward.png
 heroText: Windward
-tagline: 轻量级Web函数框架
+tagline: 轻量级Web框架
 actions:
   - text: 快速上手 →
     link: /zh/guide/dependency.html
