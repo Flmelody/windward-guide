@@ -5,4 +5,4 @@ description: 交流
 ---
 [电报](https://t.me/+jE1MYySYBT04MDkx)
 
-[DC](https://discord.gg/NzSQHvjY)
+[DC](https://discord.gg/MsCqET6r)
