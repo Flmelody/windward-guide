@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-28dc81d2","path":"/zh/dependency-injection/","title":"Dependency Injection","lang":"en-US","frontmatter":{"title":"Dependency Injection","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null}');export{e as data};

@@ -1,0 +1,14 @@
+import{_ as n}from"./plugin-vue_export-helper-c27b6911.js";import{o as a,c as s,b as e}from"./app-8bab6d59.js";const t={},c=e(`<h2 id="实现异常处理接口" tabindex="-1"><a class="header-anchor" href="#实现异常处理接口" aria-hidden="true">#</a> 实现异常处理接口</h2><div class="language-java line-numbers-mode" data-ext="java"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyExceptionHandler</span> <span class="token keyword">implements</span> <span class="token class-name">ExceptionHandler</span><span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token class-name">WindwardContext</span> windwardContext<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">// 异常处理逻辑</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">supported</span><span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">// 支持处理哪种异常</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="注册异常处理器" tabindex="-1"><a class="header-anchor" href="#注册异常处理器" aria-hidden="true">#</a> 注册异常处理器</h2><div class="language-java line-numbers-mode" data-ext="java"><pre class="language-java"><code>windward<span class="token punctuation">.</span><span class="token function">registerExceptionHandler</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">MyExceptionHandler</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,4),o=[c];function i(p,l){return a(),s("div",null,o)}const u=n(t,[["render",i],["__file","global-error-handler.html.vue"]]);export{u as default};

@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o,c as t,d as c}from"./app-8bab6d59.js";const n={},s=c("p",null,"coming soon",-1),_=[s];function a(r,l){return o(),t("div",null,_)}const d=e(n,[["render",a],["__file","avaje.html.vue"]]);export{d as default};

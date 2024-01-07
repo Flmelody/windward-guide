@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-665a3f20","path":"/zh/websocket/","title":"Websocket","lang":"en-US","frontmatter":{"title":"Websocket","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null}');export{e as data};

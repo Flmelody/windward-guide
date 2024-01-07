@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o,c as t,d as c}from"./app-8bab6d59.js";const n={},r=c("p",null,"coming soon",-1),s=[r];function _(a,l){return o(),t("div",null,s)}const m=e(n,[["render",_],["__file","dagger.html.vue"]]);export{m as default};

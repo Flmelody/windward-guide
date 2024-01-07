@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o,c as t,d as n}from"./app-8bab6d59.js";const s={},c=n("p",null,"coming soon",-1),r=[c];function _(a,i){return o(),t("div",null,r)}const d=e(s,[["render",_],["__file","spring.html.vue"]]);export{d as default};

@@ -1,0 +1,1 @@
+import{_ as t}from"./architecture-cdecf215.js";import{_ as o}from"./plugin-vue_export-helper-c27b6911.js";import{o as r,c,d as e}from"./app-8bab6d59.js";const _={},s=e("p",null,[e("img",{src:t,alt:"Architecture"})],-1),n=[s];function i(a,l){return r(),c("div",null,n)}const p=o(_,[["render",i],["__file","index.html.vue"]]);export{p as default};
