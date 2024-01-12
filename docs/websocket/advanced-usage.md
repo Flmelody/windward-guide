@@ -52,7 +52,7 @@ Advanced usage is for technical people with some ability to register the plugin,
 ExtensionalWebSocketPlugin extensionalWebSocketPlugin =
         new ExtensionalWebSocketPlugin(
             Collections.singletonList(new Decoder()), Collections.singletonList(new Parser()));
-    windward.registerPlugin(ExtensionalWebSocketPlugin.class, extensionalWebSocketPlugin);
+windward.registerPlugin(ExtensionalWebSocketPlugin.class, extensionalWebSocketPlugin);
 ```
 
 :::
