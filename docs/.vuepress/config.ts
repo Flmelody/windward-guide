@@ -126,7 +126,11 @@ export default defineUserConfig({
             {
               text: "WebSocket",
               collapsible: true,
-              children: ["/websocket/websocket.html"],
+              children: [
+                "/websocket/basic-usage.html",
+                "/websocket/advanced-usage.html",
+                "/websocket/mixed-usage.html",
+              ],
             },
             {
               text: "Dependency Injection",
@@ -218,7 +222,11 @@ export default defineUserConfig({
             {
               text: "长连接",
               collapsible: true,
-              children: ["/zh/websocket/websocket.html"],
+              children: [
+                "/zh/websocket/basic-usage.html",
+                "/zh/websocket/advanced-usage.html",
+                "/zh/websocket/mixed-usage.html",
+              ],
             },
             {
               text: "依赖注入",

@@ -1,10 +1,10 @@
 ---
 lang: en-US
-title: WebSocket
-description: WebSocket
+title: Basic Usage
+description: Basic Usage
 ---
 
-## register websocket function
+## Register websocket function
 
 ```java
     Windward.setup()
@@ -27,7 +27,7 @@ description: WebSocket
         .run();
 ```
 
-## compatible http response
+## Compatible http response
 
 ```java
     if (!webSocketWindwardContext.isUpgradedContext()) {

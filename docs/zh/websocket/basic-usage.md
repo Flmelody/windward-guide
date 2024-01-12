@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
-title: WebSocket
-description: WebSocket
+title: 基础用法
+description: 基础用法
 ---
 
 ## 注册 websocket
