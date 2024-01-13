@@ -13,26 +13,28 @@ Basic usage configuration registration is omitted.
 The following is an example of a decoder
 
 ```java
- public class Decoder extends WebSocketDecoder<Object> {
+  @ChannelHandler.Sharable
+  public class Decoder extends WebSocketDecoder<Object> {
 
-    @Override
-    protected void decode(ChannelHandlerContext ctx, Object msg, List<Object> out)
-        throws Exception {
-      if (msg instanceof WebSocketFrame) {
-        // Example of parsing a text frame
-        if (msg instanceof TextWebSocketFrame) {
-          System.out.println("Decoded my msg");
-          out.add(msg);
-          ((TextWebSocketFrame) msg).retain();
+      @Override
+      protected void decode(ChannelHandlerContext ctx, Object msg, List<Object> out)
+          throws Exception {
+        if (msg instanceof WebSocketFrame) {
+          // Example of parsing a text frame
+          if (msg instanceof TextWebSocketFrame) {
+            System.out.println("Decoded my msg");
+            out.add(msg);
+            ((TextWebSocketFrame) msg).retain();
+          }
         }
       }
-    }
- }
+  }
 ```
 
 ## Writing a message parser
 
 ```java
+  @ChannelHandler.Sharable
   public class Parser extends WebSocketParser<Object> {
 
     @Override

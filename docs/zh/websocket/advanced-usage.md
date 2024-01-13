@@ -13,26 +13,28 @@ description: 高级用法
 以下为解码器示例
 
 ```java
- public class Decoder extends WebSocketDecoder<Object> {
+  @ChannelHandler.Sharable
+  public class Decoder extends WebSocketDecoder<Object> {
 
-    @Override
-    protected void decode(ChannelHandlerContext ctx, Object msg, List<Object> out)
-        throws Exception {
-      if (msg instanceof WebSocketFrame) {
-        // Example of parsing a text frame
-        if (msg instanceof TextWebSocketFrame) {
-          System.out.println("Decoded my msg");
-          out.add(msg);
-          ((TextWebSocketFrame) msg).retain();
+      @Override
+      protected void decode(ChannelHandlerContext ctx, Object msg, List<Object> out)
+          throws Exception {
+        if (msg instanceof WebSocketFrame) {
+          // Example of parsing a text frame
+          if (msg instanceof TextWebSocketFrame) {
+            System.out.println("Decoded my msg");
+            out.add(msg);
+            ((TextWebSocketFrame) msg).retain();
+          }
         }
       }
-    }
- }
+  }
 ```
 
 ## 编写消息解析器
 
 ```java
+  @ChannelHandler.Sharable
   public class Parser extends WebSocketParser<Object> {
 
     @Override
