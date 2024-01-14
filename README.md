@@ -1,1 +1,1 @@
-Document for windward
+Manual for windward, built on vuepress, using the vuepress hope theme. This is a summary of the core windward technology and how to use it. Given the time relationship, the document is sometimes not the latest, sometimes will be super new, but do not worry, destructive changes will basically document synchronization.
