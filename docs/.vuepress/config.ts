@@ -51,6 +51,10 @@ export default defineUserConfig({
         category: "Q&A",
         categoryId: "DIC_kwDOKJoYSM4CYv8X",
       },
+      components: {
+        // components you want
+        components: ["PDF", "Share", "VPBanner", "VPCard"],
+      },
     },
     iconAssets: "iconfont",
     locales: {
