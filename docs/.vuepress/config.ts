@@ -146,11 +146,6 @@ export default defineUserConfig({
                 "/dependency-injection/spring.html",
               ],
             },
-            {
-              text: "Showcase",
-              collapsible: true,
-              children: ["/showcase/short-url.html"],
-            },
           ],
         },
       },
@@ -241,11 +236,6 @@ export default defineUserConfig({
                 "/zh/dependency-injection/dagger.html",
                 "/zh/dependency-injection/spring.html",
               ],
-            },
-            {
-              text: "使用案例",
-              collapsible: true,
-              children: ["/zh/showcase/short-url.html"],
             },
           ],
         },
