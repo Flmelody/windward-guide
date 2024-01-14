@@ -6,6 +6,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "docs:update-package": "npx vp-update",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "esotericman",
