@@ -21,25 +21,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           # 选择要使用的 node 版本
-          node-version: 18
-          
-      - name: Cache nodejs dependencies
-        uses: actions/cache@v3
-        id: yarn-cache
-        with:
-          path: |
-            **/node_modules
-          key: ${{ runner.os }}-yarn-6-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-6-
+          node-version: 20
 
       - name: Install nodejs dependencies
         #if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn install
-        
+        run: npm install
+
       # 运行构建脚本
       - name: Build windward site
-        run: yarn docs:build
+        run: npm run docs:build
 
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
