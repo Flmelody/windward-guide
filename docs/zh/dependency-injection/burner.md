@@ -4,4 +4,8 @@ title: Burner
 description: Burner
 ---
 
-coming soon
+::: important 友情提示
+
+移步至[Burner](https://burner.flmelody.org)👈 查看详细使用手册。
+
+:::

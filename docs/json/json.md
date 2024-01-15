@@ -4,7 +4,7 @@ title: Json
 description: Use Json
 ---
 
-## use jackson
+## Use jackson
 
 ::: tabs
 
@@ -32,7 +32,7 @@ implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
 
 :::
 
-## use gson
+## Use gson
 
 ::: tabs
 
@@ -59,8 +59,3 @@ implementation 'com.google.code.gson:gson:2.10.1'
 ```
 
 :::
-
-## overwrite default json plugin
-
-- implement JsonPlugin
-- register plugin with JsonPlugin.class key

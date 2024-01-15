@@ -4,25 +4,25 @@ title: Static Router
 description: Static Router
 ---
 
-## get method
+## Get method
 
 ```java
  windward.get("/simple", controller::simpleFunction)
 ```
 
-## post method
+## Post method
 
 ```java
  windward.post("/simple", controller::simpleFunction)
 ```
 
-## put method
+## Put method
 
 ```java
  windward.put("/simple", controller::simpleFunction)
 ```
 
-## delete method
+## Delete method
 
 ```java
  windward.delete("/simple", controller::simpleFunction)

@@ -4,4 +4,8 @@ title: Dagger
 description: Dagger
 ---
 
-coming soon
+::: info friendly reminder
+
+Go to [Dagger](https://dagger.dev)👈 for a first-hand manual.
+
+:::

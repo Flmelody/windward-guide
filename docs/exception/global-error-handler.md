@@ -4,7 +4,7 @@ title: Exception Handler
 description: global exception handler
 ---
 
-## implements base interface
+## Implements base interface
 
 ```java
 public class MyExceptionHandler implements ExceptionHandler{
@@ -21,7 +21,7 @@ public class MyExceptionHandler implements ExceptionHandler{
 }
 ```
 
-## register exception handler
+## Register exception handler
 
 ```java
 windward.registerExceptionHandler(new MyExceptionHandler());

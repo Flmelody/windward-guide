@@ -8,13 +8,13 @@ description: Dynamic Router
 Routers are FIFO;If you register a dynamic router before static one,The static router may not become effective.
 :::
 
-## register path variable
+## Register path variable
 
 ```java
  windward.get("/simple/{name}", controller::simpleFunction)
 ```
 
-## access path variable
+## Access path variable
 
 ```java
 windwardContext.getPathVariables().get("name")

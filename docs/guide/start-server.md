@@ -4,7 +4,7 @@ title: Run
 description: Run
 ---
 
-## register function and start
+## Register function and start
 
 ```java
 public static void main(String[] args) throws Exception {
@@ -27,7 +27,7 @@ public static void main(String[] args) throws Exception {
 }
 ```
 
-## verify interface
+## Verify interface
 
 ```shell
 curl http://127.0.0.1:8080/function1

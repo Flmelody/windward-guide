@@ -4,4 +4,8 @@ title: Spring
 description: Spring
 ---
 
-coming soon
+::: note friendly reminder
+
+Go to [Spring](https://docs.spring.io/spring-framework/reference/core/beans.html)👈 for a first-hand manual.
+
+:::

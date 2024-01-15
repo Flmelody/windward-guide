@@ -4,4 +4,8 @@ title: Dagger
 description: Dagger
 ---
 
-coming soon
+::: info 友情提示
+
+移步至[Dagger](https://dagger.dev)👈 获得一手使用手册。
+
+:::

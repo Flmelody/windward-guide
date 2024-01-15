@@ -4,7 +4,7 @@ title: Define Functions
 description: Define Functions
 ---
 
-## define functions
+## Define functions
 
 ```java
 public class Function {

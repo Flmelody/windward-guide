@@ -4,4 +4,8 @@ title: Burner
 description: Burner
 ---
 
-coming soon
+::: important friendly reminder
+
+Go to [Burner](https://burner.flmelody.org)👈 for a first-hand manual.
+
+:::

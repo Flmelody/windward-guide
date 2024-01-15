@@ -4,7 +4,7 @@ title: Freemarker Template
 description: Freemarker Template
 ---
 
-## add dependency
+## Add dependency
 
 ::: tabs
 
@@ -32,13 +32,13 @@ implementation 'org.freemarker:freemarker:2.3.32'
 
 :::
 
-## template file extension and location
+## Template file extension and location
 
 Template file should be placed in `templates` folder of resource root, also you can custom your location.
 The default template resolver only parse files that end with `ftl` extension, you can custom your owner
 template resolver for custom file extension.
 
-## response document stream
+## Response document stream
 
 ```java
 Map<String,Object> model = new HashMap<>()

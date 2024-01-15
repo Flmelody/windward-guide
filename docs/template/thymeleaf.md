@@ -4,7 +4,7 @@ title: Thymeleaf Template
 description: Thymeleaf Template
 ---
 
-## add dependency
+## Add dependency
 
 ::: tabs
 
@@ -32,13 +32,13 @@ implementation 'org.thymeleaf:thymeleaf:3.1.2.RELEASE'
 
 :::
 
-## template file extension and location
+## Template file extension and location
 
 Template file should be placed in `templates` folder of resource root, also you can custom your location.
 The default template resolver only parse files that end with `html` extension, you can custom your owner
 template resolver for custom file extension.
 
-## response document stream
+## Response document stream
 
 ```java
 Map<String,Object> model = new HashMap<>()
@@ -47,7 +47,7 @@ Map<String,Object> model = new HashMap<>()
 windwardContext.html("index.html", model);
 ```
 
-## dialect layout
+## Dialect layout
 
 ::: tabs
 

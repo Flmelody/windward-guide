@@ -44,7 +44,7 @@ The following is an example of a decoder
   }
 ```
 
-## Registering Codecs and Message Parsers
+## Registering codecs and message parsers
 
 ::: danger caution
 

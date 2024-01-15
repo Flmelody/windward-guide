@@ -4,11 +4,11 @@ title: Filter
 description: Filter
 ---
 
-## about filter
+## About filter
 
 Every filter is a child of `Filter`, will be executed before function invoking. Also they can access `WindwardContext`, so that you can do request logging, request verification and so on.
 
-## logging filter
+## Logging filter
 
 ```java
 public class LoggingFilter implements Filter {
@@ -23,7 +23,7 @@ public class LoggingFilter implements Filter {
 }
 ```
 
-## register filter
+## Register filter
 
 ```java
 windward.registerFilter(new LoggingFilter());

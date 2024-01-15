@@ -4,7 +4,7 @@ title: Dependency
 description: Dependency
 ---
 
-## dependency
+## Dependency
 
 ::: info
 Java version 1.8+
