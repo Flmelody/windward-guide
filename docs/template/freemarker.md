@@ -4,6 +4,10 @@ title: Freemarker Template
 description: Freemarker Template
 ---
 
+::: warning
+Static resource hosting is not currently implemented, pending subsequent development.
+:::
+
 ## Add dependency
 
 ::: tabs

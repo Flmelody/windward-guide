@@ -4,6 +4,10 @@ title: Thymeleaf 模板
 description: Thymeleaf 模板
 ---
 
+::: warning 提示
+当前并未实现静态资源托管，待开发。
+:::
+
 ## 添加依赖
 
 ::: tabs
