@@ -10,8 +10,30 @@ description: Showcase
   background="rgba(136, 137, 51, 0.8)"
   :actions='[
     {
+      text: "home",
+      link:"https://case.flmelody.org/short-url",
+    },
+    {
       text: "repository",
       link: "https://github.com/esotericman/short-url",
+      type: "default",
+    },
+  ]'
+/>
+
+<VPBanner
+  title="Questionnaire"
+  content="Lite version of the questionnaire system, from which you can not only learn Windward-related knowledge, but also a lot of unknown secrets"
+  background="rgba(28, 119, 145, 0.9)"
+  :actions='[
+    {
+      text: "home",
+      link:"https://case.flmelody.org/pollster",
+    },
+    {
+      text: "repository",
+      link: "https://github.com/esotericman/pollster",
+      type: "default",
     },
   ]'
 />

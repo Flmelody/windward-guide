@@ -10,8 +10,30 @@ description: 案例
   background="rgba(136, 137, 51, 0.8)"
   :actions='[
     {
+      text: "访问",
+      link:"https://case.flmelody.org/short-url",
+    },
+    {
       text: "仓库",
       link: "https://github.com/esotericman/short-url",
+      type: "default",
+    },
+  ]'
+/>
+
+<VPBanner
+  title="问小卷"
+  content="精简版问卷系统，不仅可以学会Windward相关知识，还有很多不为人知的秘密"
+  background="rgba(28, 119, 145, 0.9)"
+  :actions='[
+    {
+      text: "访问",
+      link:"https://case.flmelody.org/pollster",
+    },
+    {
+      text: "仓库",
+      link: "https://github.com/esotericman/pollster",
+      type: "default",
     },
   ]'
 />
