@@ -4,8 +4,8 @@ title: Groovy Markup Template
 description: Groovy Markup Template
 ---
 
-::: warning
-Static resource hosting is not currently implemented, pending subsequent development.
+::: tip
+You should read [Static Hosting](/resource/static-host.html) first.
 :::
 
 ## Add dependency

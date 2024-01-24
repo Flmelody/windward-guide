@@ -119,6 +119,14 @@ export default defineUserConfig({
               children: ["/exception/global-error-handler.html"],
             },
             {
+              text: "Static Resource",
+              collapsible: true,
+              children: [
+                "/resource/static-host.html",
+                "/resource/spa-host.html",
+              ],
+            },
+            {
               text: "Template Engine",
               collapsible: true,
               children: [
@@ -208,6 +216,14 @@ export default defineUserConfig({
               text: "全局异常",
               collapsible: true,
               children: ["/zh/exception/global-error-handler.html"],
+            },
+            {
+              text: "静态资源",
+              collapsible: true,
+              children: [
+                "/zh/resource/static-host.html",
+                "/zh/resource/spa-host.html",
+              ],
             },
             {
               text: "模板引擎",
