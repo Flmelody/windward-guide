@@ -23,6 +23,112 @@ features:
 footer: Apache 2.0 Licensed | Copyright © flmelody.org
 ---
 
+## 🛠 Install
+
+::: important
+JDK Minimum Requirements 8
+:::
+
+# Windward
+
+::: tabs
+
+@tab:active maven
+
+```xml
+<dependency>
+  <groupId>org.flmelody</groupId>
+  <artifactId>windward</artifactId>
+  <version>1.4.6-RELEASE</version>
+</dependency>
+```
+
+@tab gradle(kotlin)
+
+```kotlin
+implementation("org.flmelody:windward:1.4.6-RELEASE")
+```
+
+@tab gradle(groovy)
+
+```groovy
+implementation 'org.flmelody:windward:1.4.6-RELEASE'
+```
+
+:::
+
+# Json
+
+::: tabs
+
+@tab:active maven
+
+```xml
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.15.2</version>
+</dependency>
+```
+
+@tab gradle(kotlin)
+
+```kotlin
+implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
+```
+
+@tab gradle(groovy)
+
+```groovy
+implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+```
+
+:::
+
+## 🚀 Run
+
+```java
+Windward.setup()
+    // Register router group
+    .group("/v1")
+    .get(
+        "/hello-world",
+        simpleWindwardContext -> {
+          simpleWindwardContext.writeString("Hello World!");
+        })
+    // Register dynamic router
+    .get(
+        "/user/{id}",
+        simpleWindwardContext -> {
+          Object o = simpleWindwardContext.getPathVariables().get("id");
+          simpleWindwardContext.writeString(String.valueOf(o));
+        })
+    .end()
+    // Register webSocket
+    .ws(
+        "/ws",
+        webSocketWindwardContext -> {
+          if (!webSocketWindwardContext.isUpgradedContext()) {
+            webSocketWindwardContext.writeString("Unsupported protocol");
+          }
+          switch (webSocketWindwardContext.getWebSocketEvent()) {
+            case ON_CONNECT:
+              webSocketWindwardContext.writeString("Hello World!");
+              break;
+            case ON_MESSAGE:
+              Object webSocketData =
+                  webSocketWindwardContext.getWebSocketData();
+              webSocketWindwardContext.writeString("Oh?");
+              break;
+            default:
+          }
+        })
+    .then()
+    // Host static files
+    .resource("/**.js", "/**.css", "/**.jpeg", "/**.png")
+    .run();
+```
+
 ::: chart RPS Statistics
 
 ```json
