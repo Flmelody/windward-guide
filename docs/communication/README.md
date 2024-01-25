@@ -4,16 +4,14 @@ title: communication
 description: communication
 ---
 
-<VPCard
+<VPBanner
   title="Telegram"
-  desc="A new era of messaging"
-  link="https://t.me/+jE1MYySYBT04MDkx"
-  background="rgba(253, 230, 138, 0.15)"
-/>
-
-<VPCard
-  title="Discord"
-  desc="A place that belongs only to you"
-  link="https://discord.gg/MsCqET6r"
-  background="rgba(253, 230, 138, 0.15)"
+  content="Join Telegram and connect with your partners!"
+  background="rgba(25, 146, 94, 0.8)"
+  :actions='[
+    {
+      text: "Join",
+      link:"https://t.me/+jE1MYySYBT04MDkx",
+    },
+  ]'
 />

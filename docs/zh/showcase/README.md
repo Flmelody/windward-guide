@@ -1,73 +1,51 @@
 ---
 lang: zh-CN
-title: 案例
-description: 案例
+title: 真实项目
+icon: splotch
+order: 1
+category:
+  - 案例
+
+project:
+  - name: 短链接
+    desc: 简单高效的短链服务
+    logo: /images/short-url.png
+    url: https://case.flmelody.org/pollster
+    repo: https://github.com/esotericman/short-url
+    preview: /images/short-url.png
+
+  - name: 问小卷
+    desc: 精简版问卷系统，不仅可以学会Windward相关知识，还有很多不为人知的秘密
+    logo: /images/pollster.png
+    url: https://case.flmelody.org/pollster
+    repo: https://github.com/esotericman/pollster
+    preview: /images/pollster.png
+
+forecast:
+  - name: 即时消息
+    desc: 构建属于你的即时通讯服务
+    logo: /images/netmind.png
+    url: https://netmind.flmelody.org
+    repo: https://github.com/esotericman/netmind
+    preview: /images/netmind.png
 ---
 
-<VPBanner
-  title="短链接"
-  content="简单高效的短链服务"
-  background="rgba(136, 137, 51, 0.8)"
-  :actions='[
-    {
-      text: "访问",
-      link:"https://case.flmelody.org/short-url",
-    },
-    {
-      text: "仓库",
-      link: "https://github.com/esotericman/short-url",
-      type: "default",
-    },
-  ]'
+## 使用 Windward 的现有项目
+
+<SiteInfo
+  v-for="item in $frontmatter.project"
+  :key="item.link"
+  v-bind="item"
 />
 
-<VPBanner
-  title="问小卷"
-  content="精简版问卷系统，不仅可以学会Windward相关知识，还有很多不为人知的秘密"
-  background="rgba(28, 119, 145, 0.9)"
-  :actions='[
-    {
-      text: "访问",
-      link:"https://case.flmelody.org/pollster",
-    },
-    {
-      text: "仓库",
-      link: "https://github.com/esotericman/pollster",
-      type: "default",
-    },
-  ]'
+## 使用 Windward 的预告项目
+
+<SiteInfo
+  v-for="item in $frontmatter.forecast"
+  :key="item.link"
+  v-bind="item"
 />
 
-<VPBanner
-  title="即时消息"
-  content="构建属于你的即时通讯服务"
-  background="rgba(61, 103, 32, 0.8)"
-  :actions='[
-    {
-      text: "访问",
-      link:"https://netmind.flmelody.org",
-    },
-    {
-      text: "仓库",
-      link: "https://github.com/esotericman/netmind",
-      type: "default",
-    },
-  ]'
-/>
+## 更多
 
-<VPBanner
-  title="时光之球"
-  content="在地球上自在畅玩"
-  background="rgba(53, 162, 120, 0.8)"
-  :actions='[
-    {
-      text: "访问",
-      link:"https://bluesky.flmelody.org",
-    },
-    {
-      text: "仓库",
-      link: "https://github.com/esotericman/bluesky",
-      type: "default",
-    },
-  ]'
-/>
+- 随时随地通过 PR 添加你的项目至此。

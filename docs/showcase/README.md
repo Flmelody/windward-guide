@@ -1,73 +1,51 @@
 ---
 lang: en-US
-title: Showcase
-description: Showcase
+title: Real Projects
+icon: splotch
+order: 1
+category:
+  - Showcase
+
+project:
+  - name: Short Url
+    desc: Build your short url service
+    logo: /images/short-url.png
+    url: https://case.flmelody.org/pollster
+    repo: https://github.com/esotericman/short-url
+    preview: /images/short-url.png
+
+  - name: Questionnaire
+    desc: Lite version of the questionnaire system, from which you can not only learn Windward-related knowledge, but also a lot of unknown secrets
+    logo: /images/pollster.png
+    url: https://case.flmelody.org/pollster
+    repo: https://github.com/esotericman/pollster
+    preview: /images/pollster.png
+
+forecast:
+  - name: Instant Message
+    desc: Build your instant message service
+    logo: /images/netmind.png
+    url: https://netmind.flmelody.org
+    repo: https://github.com/esotericman/netmind
+    preview: /images/netmind.png
 ---
 
-<VPBanner
-  title="Short Url"
-  content="Build your short url service"
-  background="rgba(136, 137, 51, 0.8)"
-  :actions='[
-    {
-      text: "home",
-      link:"https://case.flmelody.org/short-url",
-    },
-    {
-      text: "repository",
-      link: "https://github.com/esotericman/short-url",
-      type: "default",
-    },
-  ]'
+## Existing projects using Windward
+
+<SiteInfo
+  v-for="item in $frontmatter.project"
+  :key="item.link"
+  v-bind="item"
 />
 
-<VPBanner
-  title="Questionnaire"
-  content="Lite version of the questionnaire system, from which you can not only learn Windward-related knowledge, but also a lot of unknown secrets"
-  background="rgba(28, 119, 145, 0.9)"
-  :actions='[
-    {
-      text: "home",
-      link:"https://case.flmelody.org/pollster",
-    },
-    {
-      text: "repository",
-      link: "https://github.com/esotericman/pollster",
-      type: "default",
-    },
-  ]'
+## Using Windward's preview program
+
+<SiteInfo
+  v-for="item in $frontmatter.forecast"
+  :key="item.link"
+  v-bind="item"
 />
 
-<VPBanner
-  title="Instant Message"
-  content="Build your instant message service"
-  background="rgba(61, 103, 32, 0.8)"
-  :actions='[
-    {
-      text: "home",
-      link:"https://netmind.flmelody.org",
-    },
-    {
-      text: "repository",
-      link: "https://github.com/esotericman/netmind",
-      type: "default",
-    },
-  ]'
-/>
+## More
 
-<VPBanner
-  title="The Earth of Time"
-  content="Playing at home on Earth"
-  background="rgba(53, 162, 120, 0.8)"
-  :actions='[
-    {
-      text: "home",
-      link:"https://bluesky.flmelody.org",
-    },
-    {
-      text: "repository",
-      link: "https://github.com/esotericman/bluesky",
-      type: "default",
-    },
-  ]'
-/>
+- Add your projects to this via PR anytime, anywhere.

@@ -53,7 +53,7 @@ export default defineUserConfig({
       },
       components: {
         // components you want
-        components: ["PDF", "Share", "VPBanner", "VPCard"],
+        components: ["PDF", "Share", "VPBanner", "VPCard", "SiteInfo"],
       },
     },
     iconAssets: "iconfont",
