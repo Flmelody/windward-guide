@@ -41,6 +41,7 @@ export default defineUserConfig({
       mdEnhance: {
         // 添加选项卡支持
         tabs: true,
+        codetabs: true,
         // 启用图表
         chart: true,
       },

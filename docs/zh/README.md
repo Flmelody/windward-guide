@@ -29,9 +29,9 @@ footer: Apache 2.0 Licensed | Copyright © flmelody.org
 JDK 最低要求 8
 :::
 
-# Windward
+添加 Windward 依赖
 
-::: tabs
+::: code-tabs#shell
 
 @tab:active maven
 
@@ -57,9 +57,9 @@ implementation 'org.flmelody:windward:1.4.6-RELEASE'
 
 :::
 
-# Json
+添加 JSON 解析
 
-::: tabs
+::: code-tabs#shell
 
 @tab:active maven
 
