@@ -18,20 +18,20 @@ Java version 1.8+
 <dependency>
   <groupId>org.flmelody</groupId>
   <artifactId>windward</artifactId>
-  <version>1.4.6-RELEASE</version>
+  <version>1.4.8-RELEASE</version>
 </dependency>
 ```
 
 @tab gradle(kotlin)
 
 ```kotlin
-implementation("org.flmelody:windward:1.4.6-RELEASE")
+implementation("org.flmelody:windward:1.4.8-RELEASE")
 ```
 
 @tab gradle(groovy)
 
 ```groovy
-implementation 'org.flmelody:windward:1.4.6-RELEASE'
+implementation 'org.flmelody:windward:1.4.8-RELEASE'
 ```
 
 :::
