@@ -4,18 +4,27 @@ title: Dynamic Router
 description: Dynamic Router
 ---
 
-::: tip tip
+::: tip
 Routers are FIFO;If you register a dynamic router before static one,The static router may not become effective.
+:::
+
+::: warning
+Dynamic router `/{name}` matches `/url` and `/url/name`, likes `/**` now. But it's a bug, expected behavior is it should only matches `/url`, this will be fixed in next version.
 :::
 
 ## Register path variable
 
 ```java
- windward.get("/simple/{name}", controller::simpleFunction)
+Windward.setup()
+    .get(
+        "/get/{name}",
+        simpleWindwardContext -> {
+            simpleWindwardContext.writeString("Hello World!");
+        });
 ```
 
 ## Access path variable
 
 ```java
-windwardContext.getPathVariables().get("name")
+simpleWindwardContext.getPathVariables().get("name");
 ```
