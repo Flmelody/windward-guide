@@ -54,7 +54,7 @@ description: 高级用法
 ExtensionalWebSocketPlugin extensionalWebSocketPlugin =
         new ExtensionalWebSocketPlugin(
             Collections.singletonList(new Decoder()), Collections.singletonList(new Parser()));
-windward.registerPlugin(ExtensionalWebSocketPlugin.class, extensionalWebSocketPlugin);
+windward.registerPlugin(PluginSlot.WEBSOCKET, extensionalWebSocketPlugin);
 ```
 
 :::

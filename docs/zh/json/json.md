@@ -59,8 +59,3 @@ implementation 'com.google.code.gson:gson:2.10.1'
 ```
 
 :::
-
-## 覆盖默认的 json 插件行为
-
-- 实现 JsonPlugin 接口
-- 通过调用 windward 的 registerPlugin 方法覆盖 JsonPlugin.class 的实现

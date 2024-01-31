@@ -14,10 +14,10 @@ description: 单页面应用托管
 
 ```java
 windward.registerPlugin(
-    ResourcePlugin.class, new FixedStaticResourcePlugin(windward.getStaticResourceLocations()));
+    PluginSlot.RESOURCE, new FixedStaticResourcePlugin(windward.getStaticResourceLocations()));
 ```
 
-# 单页面名称
+# 自定义的单页面名称
 
 ```java
 // 添加了自定义的home文件
