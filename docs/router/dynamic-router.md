@@ -8,10 +8,6 @@ description: Dynamic Router
 Routers are FIFO;If you register a dynamic router before static one,The static router may not become effective.
 :::
 
-::: warning
-Dynamic router `/{name}` matches `/url` and `/url/name`, likes `/**` now. But it's a bug, expected behavior is it should only matches `/url`, this will be fixed in next version.
-:::
-
 ## Register path variable
 
 ```java

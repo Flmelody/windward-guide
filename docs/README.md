@@ -39,20 +39,20 @@ Add Windward library
 <dependency>
   <groupId>org.flmelody</groupId>
   <artifactId>windward</artifactId>
-  <version>1.4.8-RELEASE</version>
+  <version>1.4.9-RELEASE</version>
 </dependency>
 ```
 
 @tab gradle(kotlin)
 
 ```kotlin
-implementation("org.flmelody:windward:1.4.8-RELEASE")
+implementation("org.flmelody:windward:1.4.9-RELEASE")
 ```
 
 @tab gradle(groovy)
 
 ```groovy
-implementation 'org.flmelody:windward:1.4.8-RELEASE'
+implementation 'org.flmelody:windward:1.4.9-RELEASE'
 ```
 
 :::
