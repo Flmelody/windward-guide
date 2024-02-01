@@ -92,8 +92,7 @@ export default defineUserConfig({
                 "/guide/why-windward.html",
                 "/guide/dependency.html",
                 "/guide/quick-start.html",
-                "/guide/functions.html",
-                "/guide/start-server.html",
+                "/guide/elegant-router.html",
               ],
             },
             {
@@ -191,8 +190,7 @@ export default defineUserConfig({
                 "/zh/guide/why-windward.html",
                 "/zh/guide/dependency.html",
                 "/zh/guide/quick-start.html",
-                "/zh/guide/functions.html",
-                "/zh/guide/start-server.html",
+                "/zh/guide/elegant-router.html",
               ],
             },
             {
