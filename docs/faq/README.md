@@ -12,6 +12,18 @@ description: FAQ
 
 #### A: `Windward` is not configured with a default logging implementation, built-in SLF4J facade mode adaptation, you need to add your own logging implementation
 
+#### Q: What is `WindwardContext`? How does it work?
+
+#### A: The `WindwardContext` is the only parameter of the routing function, and the request and response operations revolve around the `WindwardContext`
+
+There are currently two commonly used
+
+`SimpleWindwardContext` for HTTP routing
+
+`WebSocketWindwardContext` for WebSocket routing
+
+The other `EnhancedWindwardContext` currently behaves in the same way as `SimpleWindwardContext` and is used for routing functions with return values; however, it currently doesn't do anything with return values and is not recommended for now
+
 #### Q: 😕 How to customize the 404 return value?
 
 #### A: When a request 404 occurs, `Windward` will throw `HandlerNotFoundException` exception, you can implement `ExceptionHandler` to customize the handling, currently the default implementation is `DefaultNotFoundHandler` (lowest priority)
