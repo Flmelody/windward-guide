@@ -20,9 +20,9 @@ There are currently two commonly used
 
 `SimpleWindwardContext` for HTTP routing
 
-`WebSocketWindwardContext` for WebSocket routing
+`JsonWindwardContext` is also used for HTTP routing, but automatically serialises the return value and responds as `JSON`
 
-The other `EnhancedWindwardContext` currently behaves in the same way as `SimpleWindwardContext` and is used for routing functions with return values; however, it currently doesn't do anything with return values and is not recommended for now
+`WebSocketWindwardContext` for WebSocket routing
 
 #### Q: 😕 How to customize the 404 return value?
 
