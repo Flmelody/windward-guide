@@ -68,4 +68,39 @@ Windward.setup()
 
 # Function
 
-The current usage of `Function` is not much different from `Consumer` and does not deal with function return values
+`Function` currently supports several implementations of `EnhancedWindwardContext`, the most common being `JsonWindwardContext`
+
+::: tip
+The `JsonWindwardContext` automatically serialises the function's return value and responds as JSON.
+:::
+
+The following is a simple `JsonWindwardContext` example
+
+```java
+public class Application {
+
+  static class User {
+    public Integer id;
+    public String name;
+
+    public User(Integer id, String name) {
+      this.id = id;
+      this.name = name;
+    }
+  }
+
+  public static User selectUser(JsonWindwardContext jsonWindwardContext) {
+    return new User(1, "Jay");
+  }
+}
+```
+
+```java
+Windward.setup().post("/", Application::selectUser).run();
+```
+
+::: important
+
+Of course, you can also implement your own `WindwardContext` by referring to `JsonWindwardContext`.
+
+:::

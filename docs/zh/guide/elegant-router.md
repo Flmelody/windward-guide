@@ -68,4 +68,39 @@ Windward.setup()
 
 # Function
 
-目前`Function`的用法和`Consumer`区别不大，并没有处理函数返回值
+`Function`目前支持多个`EnhancedWindwardContext`的实现，常用的为`JsonWindwardContext`
+
+::: tip 提示
+`JsonWindwardContext`会自动序列化函数返回值，并以 JSON 形式响应。
+:::
+
+以下是一个简单的`JsonWindwardContext`示例
+
+```java
+public class Application {
+
+  static class User {
+    public Integer id;
+    public String name;
+
+    public User(Integer id, String name) {
+      this.id = id;
+      this.name = name;
+    }
+  }
+
+  public static User selectUser(JsonWindwardContext jsonWindwardContext) {
+    return new User(1, "Jay");
+  }
+}
+```
+
+```java
+Windward.setup().post("/", Application::selectUser).run();
+```
+
+::: important 小技巧
+
+当然你也可以参照`JsonWindwardContext`实现自己的`WindwardContext`。
+
+:::
