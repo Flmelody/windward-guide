@@ -92,7 +92,6 @@ export default defineUserConfig({
                 "/guide/why-windward.html",
                 "/guide/dependency.html",
                 "/guide/quick-start.html",
-                "/guide/elegant-router.html",
               ],
             },
             {
@@ -106,6 +105,7 @@ export default defineUserConfig({
               children: [
                 "/router/static-router.html",
                 "/router/dynamic-router.html",
+                "/router/elegant-router.html",
               ],
             },
             {
@@ -190,7 +190,6 @@ export default defineUserConfig({
                 "/zh/guide/why-windward.html",
                 "/zh/guide/dependency.html",
                 "/zh/guide/quick-start.html",
-                "/zh/guide/elegant-router.html",
               ],
             },
             {
@@ -204,6 +203,7 @@ export default defineUserConfig({
               children: [
                 "/zh/router/static-router.html",
                 "/zh/router/dynamic-router.html",
+                "/zh/router/elegant-router.html",
               ],
             },
             {
