@@ -63,22 +63,22 @@ export default defineUserConfig({
         navbar: [
           {
             text: "Guide",
-            link: "/guide",
+            link: "/guide/",
             icon: "launch",
           },
           {
             text: "Q&A",
-            link: "/faq",
+            link: "/faq/",
             icon: "mark",
           },
           {
             text: "Showcase",
-            link: "/showcase",
+            link: "/showcase/",
             icon: "app",
           },
           {
             text: "Communication",
-            link: "/communication",
+            link: "/communication/",
             icon: "group",
           },
         ],
@@ -161,22 +161,22 @@ export default defineUserConfig({
         navbar: [
           {
             text: "指南",
-            link: "/zh/guide",
+            link: "/zh/guide/",
             icon: "launch",
           },
           {
             text: "常见问题",
-            link: "/zh/faq",
+            link: "/zh/faq/",
             icon: "mark",
           },
           {
             text: "案例",
-            link: "/zh/showcase",
+            link: "/zh/showcase/",
             icon: "app",
           },
           {
             text: "交流",
-            link: "/zh/communication",
+            link: "/zh/communication/",
             icon: "group",
           },
         ],
