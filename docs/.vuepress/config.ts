@@ -119,6 +119,11 @@ export default defineUserConfig({
               children: ["/exception/global-error-handler.html"],
             },
             {
+              text: "Event Listener",
+              collapsible: true,
+              children: ["/listener/listener.html"],
+            },
+            {
               text: "Static Resource",
               collapsible: true,
               children: [
@@ -210,6 +215,11 @@ export default defineUserConfig({
               text: "全局过滤器",
               collapsible: true,
               children: ["/zh/filter/filter.html"],
+            },
+            {
+              text: "事件监听器",
+              collapsible: true,
+              children: ["/zh/listener/listener.html"],
             },
             {
               text: "全局异常",

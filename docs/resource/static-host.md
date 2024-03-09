@@ -27,6 +27,19 @@ If you prefer to host all, register it like below.
 windward.resource("/**");
 ```
 
+::: important
+
+For routes registered with `windward.resource`, static resources should be placed in the global default static resource directory, which is unique. If you have multiple different static resource directories, try the following writeup.
+
+```java
+windward
+    .resources("/static", "/static/**.js", "/static/**.png", "/static/**.html")
+    .resources("/vue", "/vue/**.html")
+    .resources("/home", "/home/**");
+```
+
+:::
+
 Static resource hosting, in essence, is also a routing strategy, so we need to be extra careful with wildcard writing, e.g. `/**`.
 ::: caution
 

@@ -10,7 +10,7 @@ description: 单页面应用托管
 
 # 单页面插件
 
-注册单页面插件，此时默认资源插件行为已被覆盖。该插件默认返回`index.html`
+注册单页面插件，此时默认资源插件行为已被覆盖。该插件默认返回`index.html`，当指定路由无法找到时，会尝试返回`index.html`文件。
 
 ```java
 windward.registerPlugin(

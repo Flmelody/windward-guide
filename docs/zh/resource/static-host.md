@@ -27,7 +27,20 @@ windward.resource("/**.js","/**.css","/**.jpeg","/**.png");
 windward.resource("/**");
 ```
 
-静态资源托管，本质也是路由策略，所以我们需要格外小心通配符写法，例如`/**`
+::: important 注意
+
+`windward.resource`注册的路由，静态资源应放置于全局默认的静态资源目录，该目录唯一。如果你有多个不同的静态资源目录，可以尝试以下写法
+
+```java
+windward
+    .resources("/static", "/static/**.js", "/static/**.png", "/static/**.html")
+    .resources("/vue", "/vue/**.html")
+    .resources("/home", "/home/**");
+```
+
+:::
+
+静态资源托管，本质也是路由策略，所以我们需要格外小心通配符写法，例如`/**`，时刻注意路由的先入先出原则
 ::: caution 危险
 
 ```java

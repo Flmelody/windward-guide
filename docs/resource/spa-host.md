@@ -10,7 +10,7 @@ Experience version feature ❤️
 
 # SPA plugin
 
-Register the single page plugin, at which point the default resource plugin behavior is overridden. The plugin returns `index.html` by default.
+Register the single page plugin, at which point the default resource plugin behaviour is overridden. The plugin returns `index.html` by default and tries to return the `index.html` file when the specified route cannot be found.
 
 ```java
 windward.registerPlugin(
