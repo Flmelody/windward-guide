@@ -10,7 +10,7 @@ project:
   - name: 短链接
     desc: 简单高效的短链服务
     logo: /images/short-url.png
-    url: https://case.flmelody.org/pollster
+    url: https://case.flmelody.org/short-url
     repo: https://github.com/esotericman/short-url
     preview: /images/short-url.png
 
