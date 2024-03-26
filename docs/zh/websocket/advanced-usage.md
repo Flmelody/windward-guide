@@ -46,9 +46,9 @@ description: 高级用法
 
 ## 注册编解码器及消息解析器
 
-::: danger 注意
+::: important 值得一试
 
-高级用法适用于有一定能力的技术人员，注册该插件至少需要包含一个编解码器和一个消息解析器，否则插件不生效
+高级用法适用于有一定能力的技术人员，利用该插件可以使用多个自定义编解码器和消息解析器，实现自定义协议。
 
 ```java
 ExtensionalWebSocketPlugin extensionalWebSocketPlugin =

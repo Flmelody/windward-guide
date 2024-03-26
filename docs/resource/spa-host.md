@@ -5,7 +5,7 @@ description: SPA Hosting
 ---
 
 ::: important
-Experience version feature ❤️
+Experience version feature ❤️ (expected official release in `1.5.1-RELEASE`)
 :::
 
 # SPA plugin

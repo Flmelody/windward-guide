@@ -46,9 +46,9 @@ The following is an example of a decoder
 
 ## Registering codecs and message parsers
 
-::: danger caution
+::: important have a try
 
-Advanced usage is for technical people with some ability to register the plugin, which needs to contain at least one codec and one message parser, otherwise the plugin will not work
+Advanced usage is for technicians with some ability to implement custom protocols using multiple custom codecs and message parsers with this plugin.
 
 ```java
 ExtensionalWebSocketPlugin extensionalWebSocketPlugin =
