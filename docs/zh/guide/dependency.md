@@ -18,20 +18,20 @@ Java 版本最低要求 1.8
 <dependency>
   <groupId>org.flmelody</groupId>
   <artifactId>windward</artifactId>
-  <version>1.5.0-RELEASE</version>
+  <version>1.5.1-RELEASE</version>
 </dependency>
 ```
 
 @tab gradle(kotlin)
 
 ```kotlin
-implementation("org.flmelody:windward:1.5.0-RELEASE")
+implementation("org.flmelody:windward:1.5.1-RELEASE")
 ```
 
 @tab gradle(groovy)
 
 ```groovy
-implementation 'org.flmelody:windward:1.5.0-RELEASE'
+implementation 'org.flmelody:windward:1.5.1-RELEASE'
 ```
 
 :::
