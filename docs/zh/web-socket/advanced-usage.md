@@ -58,3 +58,26 @@ windward.registerPlugin(PluginSlot.WEBSOCKET, extensionalWebSocketPlugin);
 ```
 
 :::
+
+## 路由独占式 Socket 插件
+
+某些时候，我们可能会注册多个 WebSocket 路由，这时候如何让 WebSocket 插件只在指定的 WebSocket 路由下生效呢？非常容易！
+
+```java
+    ExtensionalWebSocketPlugin uws =
+        new ExtensionalWebSocketPlugin(
+            "/u-ws/**",
+            Collections.singletonList(new DecoderU()),
+            Collections.singletonList(new ParserU()));
+    ExtensionalWebSocketPlugin ows =
+        new ExtensionalWebSocketPlugin(
+            "/o-ws/**",
+            Collections.singletonList(new DecoderO()),
+            Collections.singletonList(new ParserO()));
+    windward.registerPlugin(
+        PluginSlot.WEBSOCKET, new MultiWebSocketPlugin(Arrays.asList(uws, ows)));
+```
+
+## Socket 鉴权
+
+WebSocket 长连接是消耗服务器资源的，不能随便哪个客户端知道服务器地址就能连接上来。在用户建立 WebSocket 连接前对用户身份进行校验是有必要的

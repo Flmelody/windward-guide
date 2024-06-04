@@ -39,20 +39,20 @@ Add Windward library
 <dependency>
   <groupId>org.flmelody</groupId>
   <artifactId>windward</artifactId>
-  <version>1.5.0-RELEASE</version>
+  <version>1.5.3-RELEASE</version>
 </dependency>
 ```
 
 @tab gradle(kotlin)
 
 ```kotlin
-implementation("org.flmelody:windward:1.5.0-RELEASE")
+implementation("org.flmelody:windward:1.5.3-RELEASE")
 ```
 
 @tab gradle(groovy)
 
 ```groovy
-implementation 'org.flmelody:windward:1.5.0-RELEASE'
+implementation 'org.flmelody:windward:1.5.3-RELEASE'
 ```
 
 :::
@@ -67,23 +67,77 @@ Add JSON library
 <dependency>
     <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-databind</artifactId>
-    <version>2.15.2</version>
+    <version>2.17.1</version>
 </dependency>
 ```
 
 @tab gradle(kotlin)
 
 ```kotlin
-implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
+implementation("com.fasterxml.jackson.core:jackson-databind:2.17.1")
 ```
 
 @tab gradle(groovy)
 
 ```groovy
-implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.1'
 ```
 
 :::
+
+Add Logging library
+
+::: code-tabs#shell
+
+@tab maven
+
+```xml
+<dependency>
+    <groupId>ch.qos.logback</groupId>
+    <artifactId>logback-classic</artifactId>
+    <version>1.3.14</version>
+</dependency>
+```
+
+@tab:active gradle(kotlin)
+
+```kotlin
+implementation("ch.qos.logback:logback-classic:1.3.14")
+```
+
+@tab gradle(groovy)
+
+```groovy
+implementation 'ch.qos.logback:logback-classic:1.3.14'
+```
+
+:::
+Add `logback.xml`
+
+```xml
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener"/>
+    <logger name="org.flmelody" level="info" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+    <!--add your package name-->
+    <!--    <logger name="your package" level="info" additivity="false">
+            <appender-ref ref="CONSOLE"/>
+        </logger>-->
+
+    <root level="error">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
+```
 
 ## 🚀 Run
 
@@ -127,6 +181,18 @@ Windward.setup()
     // Host static files
     .resource("/**.js", "/**.css", "/**.jpeg", "/**.png")
     .run();
+```
+
+## 🛸 Cheers
+
+```console
+  _      ___         __                   __
+ | | /| / (_)__  ___/ /    _____ ________/ /
+ | |/ |/ / / _ \/ _  / |/|/ / _ `/ __/ _  /
+ |__/|__/_/_//_/\_,_/|__,__/\_,_/_/  \_,_/
+
+     Windward Version 1.5.3-RELEASE
+23:12:57.369 [main] INFO  o.f.core.netty.NettyHttpServer - Service started successfully, listening on port 8080
 ```
 
 ::: chart RPS Statistics
