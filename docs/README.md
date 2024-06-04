@@ -142,45 +142,7 @@ Add `logback.xml`
 ## 🚀 Run
 
 ```java
-Windward.setup()
-    // Register router group
-    .group("/v1")
-    .get(
-        "/hello-world",
-        simpleWindwardContext -> {
-          simpleWindwardContext.writeString("Hello World!");
-        })
-    // Register dynamic router
-    .get(
-        "/user/{id}",
-        simpleWindwardContext -> {
-          Object o = simpleWindwardContext.getPathVariables().get("id");
-          simpleWindwardContext.writeString(String.valueOf(o));
-        })
-    .end()
-    // Register webSocket
-    .ws(
-        "/ws",
-        webSocketWindwardContext -> {
-          if (!webSocketWindwardContext.isUpgradedContext()) {
-            webSocketWindwardContext.writeString("Unsupported protocol");
-          }
-          switch (webSocketWindwardContext.getWebSocketEvent()) {
-            case ON_CONNECT:
-              webSocketWindwardContext.writeString("Hello World!");
-              break;
-            case ON_MESSAGE:
-              Object webSocketData =
-                  webSocketWindwardContext.getWebSocketData();
-              webSocketWindwardContext.writeString("Oh?");
-              break;
-            default:
-          }
-        })
-    .then()
-    // Host static files
-    .resource("/**.js", "/**.css", "/**.jpeg", "/**.png")
-    .run();
+Windward.setup().get("/", () -> "Hello World!").run();
 ```
 
 ## 🛸 Cheers

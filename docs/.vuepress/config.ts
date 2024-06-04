@@ -105,6 +105,7 @@ export default defineUserConfig({
               children: [
                 "/router/static-router.html",
                 "/router/dynamic-router.html",
+                "/router/group-router.html",
                 "/router/elegant-router.html",
               ],
             },
@@ -212,6 +213,7 @@ export default defineUserConfig({
               children: [
                 "/zh/router/static-router.html",
                 "/zh/router/dynamic-router.html",
+                "/zh/router/group-router.html",
                 "/zh/router/elegant-router.html",
               ],
             },

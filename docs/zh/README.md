@@ -143,45 +143,7 @@ implementation 'ch.qos.logback:logback-classic:1.3.14'
 ## 🚀 运行
 
 ```java
-Windward.setup()
-    // 注册路由组
-    .group("/v1")
-    .get(
-        "/hello-world",
-        simpleWindwardContext -> {
-          simpleWindwardContext.writeString("Hello World!");
-        })
-    // 注册动态路由
-    .get(
-        "/user/{id}",
-        simpleWindwardContext -> {
-          Object o = simpleWindwardContext.getPathVariables().get("id");
-          simpleWindwardContext.writeString(String.valueOf(o));
-        })
-    .end()
-    // 注册webSocket
-    .ws(
-        "/ws",
-        webSocketWindwardContext -> {
-          if (!webSocketWindwardContext.isUpgradedContext()) {
-            webSocketWindwardContext.writeString("Unsupported protocol");
-          }
-          switch (webSocketWindwardContext.getWebSocketEvent()) {
-            case ON_CONNECT:
-              webSocketWindwardContext.writeString("Hello World!");
-              break;
-            case ON_MESSAGE:
-              Object webSocketData =
-                  webSocketWindwardContext.getWebSocketData();
-              webSocketWindwardContext.writeString("Oh?");
-              break;
-            default:
-          }
-        })
-    .then()
-    // 注册静态资源托管规则
-    .resource("/**.js", "/**.css", "/**.jpeg", "/**.png")
-    .run();
+Windward.setup().get("/", () -> "Hello World!").run();
 ```
 
 ## 🛸 启动成功
