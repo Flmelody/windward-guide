@@ -58,3 +58,50 @@ windward.registerPlugin(PluginSlot.WEBSOCKET, extensionalWebSocketPlugin);
 ```
 
 :::
+
+## Routing exclusive socket plugin
+
+At some point, we may register more than one WebSocket route, how can we make the WebSocket plugin work only under the specified WebSocket route? It's very easy!
+
+```java
+    ExtensionalWebSocketPlugin uws =
+        new ExtensionalWebSocketPlugin(
+            "/u-ws/**",
+            Collections.singletonList(new DecoderU()),
+            Collections.singletonList(new ParserU()));
+    ExtensionalWebSocketPlugin ows =
+        new ExtensionalWebSocketPlugin(
+            "/o-ws/**",
+            Collections.singletonList(new DecoderO()),
+            Collections.singletonList(new ParserO()));
+    windward.registerPlugin(
+        PluginSlot.WEBSOCKET, new MultiWebSocketPlugin(Arrays.asList(uws, ows)));
+```
+
+## Socket authentication
+
+WebSocket long connection is consuming server resources, can not just any client knows the address of the server can connect. It is necessary to verify the user's identity before the user establishes a WebSocket connection.
+
+### Implementing authentication logic
+
+```java
+public class CustomAuthorizationProvider implements AuthorizationProvider {
+  @Override
+  public boolean authenticate(WindwardContext windwardContext) {
+    // Returns true to indicate authentication passed
+    return true;
+  }
+}
+```
+
+### Add forensic processing
+
+```java
+Windward.setup()
+    .ws(
+        "/ws",
+        webSocketWindwardContext -> {
+          // do something
+        },
+        new CustomAuthorizationProvider());
+```

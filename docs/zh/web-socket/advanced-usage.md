@@ -81,3 +81,27 @@ windward.registerPlugin(PluginSlot.WEBSOCKET, extensionalWebSocketPlugin);
 ## Socket 鉴权
 
 WebSocket 长连接是消耗服务器资源的，不能随便哪个客户端知道服务器地址就能连接上来。在用户建立 WebSocket 连接前对用户身份进行校验是有必要的
+
+### 实现鉴权逻辑
+
+```java
+public class CustomAuthorizationProvider implements AuthorizationProvider {
+  @Override
+  public boolean authenticate(WindwardContext windwardContext) {
+    // 返回true表示鉴权通过
+    return true;
+  }
+}
+```
+
+### 添加鉴权处理
+
+```java
+Windward.setup()
+    .ws(
+        "/ws",
+        webSocketWindwardContext -> {
+          // do something
+        },
+        new CustomAuthorizationProvider());
+```
