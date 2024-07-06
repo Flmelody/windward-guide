@@ -142,6 +142,10 @@ export default defineUserConfig({
               ],
             },
             {
+              text: "Hosted Https",
+              link: "/hosted-https/",
+            },
+            {
               text: "WebSocket",
               collapsible: true,
               children: [
@@ -163,6 +167,10 @@ export default defineUserConfig({
                 "/dependency-injection/dagger.html",
                 "/dependency-injection/spring.html",
               ],
+            },
+            {
+              text: "Build",
+              link: "/build/",
             },
           ],
         },
@@ -250,6 +258,10 @@ export default defineUserConfig({
               ],
             },
             {
+              text: "Https托管",
+              link: "/zh/hosted-https/",
+            },
+            {
               text: "WebSocket",
               collapsible: true,
               children: [
@@ -271,6 +283,10 @@ export default defineUserConfig({
                 "/zh/dependency-injection/dagger.html",
                 "/zh/dependency-injection/spring.html",
               ],
+            },
+            {
+              text: "打包应用",
+              link: "/zh/build/",
             },
           ],
         },
